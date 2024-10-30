@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-in</title>
+    <link rel="stylesheet" href="./styles/login-register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- tambah logo disini, center  -->
+
+    <div class="card">
+        <form action="">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" name="username" id="username" placeholder="Username or email" required>
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" name="password" id="password" placeholder="Password" required>
+                <i class="fa-solid fa-lock"></i>
+            </div>
+            <div class="remember">
+                <label for="remember-cred">
+                    <input type="checkbox" id="remember-cred"> Remember me
+                </label>
+                <a href="#">Forgot password?</a>
+            </div>
+            <button type="submit" class="button-submit">Login</button>
+            <div class="refer">
+                <p>Don't have an account? <a href="./register-page.html">Register</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
