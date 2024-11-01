@@ -19,8 +19,8 @@ body {
     z-index: 1000;
 }
 .header .logo {
-    font-size: 24px;
-    font-weight: bold;
+    height: 80px;
+    width: 100px;
 }
 .header .nav {
     display: flex;
