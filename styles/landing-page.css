@@ -209,6 +209,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .card img {
     width: 100%;
@@ -229,6 +232,12 @@ body {
     color: #000;
     font-weight: bold;
 }
+.description {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+}
 @media (max-width: 768px) {
     .cards {
         flex-direction: column;
@@ -244,6 +253,12 @@ body {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.card:hover .description {
+    max-height: 100px; 
+    opacity: 1;
+}
+
 
 .see-more-card {
     background-color: #fff; 

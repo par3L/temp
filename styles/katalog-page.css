@@ -78,3 +78,14 @@
 .buy-button:hover {
     background-color: #1db954;
 }
+
+.copyright {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #111;
+    height: 100px;
+    padding: 0 0 0 0;
+}

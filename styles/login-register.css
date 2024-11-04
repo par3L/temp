@@ -12,6 +12,19 @@ body {
     min-height: 100vh;
     background: #1a1a1a; 
     color: #fff;
+    flex-direction: column;
+}
+
+.header-logo {
+    position: relative;
+    top: -40px; 
+    z-index: 1;
+    text-align: center;
+    margin-bottom: -40px; 
+}
+
+.header-logo img {
+    width: 200px; 
 }
 
 .card {
