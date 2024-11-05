@@ -1,3 +1,48 @@
+<?php
+require './nodes/connection.php';
+
+if (isset($_POST['submit'])) {
+    $username = mysqli_real_escape_string($conn, $_POST['username']);
+    $email = mysqli_real_escape_string($conn, $_POST['email']);
+    $password = $_POST['password'];
+    $confirm_password = $_POST['confirm-password'];
+
+    $user_check = mysqli_query($conn, "SELECT * FROM user WHERE username = '$username'");
+    
+    if (mysqli_num_rows($user_check) > 0) {
+        echo "
+        <script>
+            alert('Username sudah ada!');
+        </script>
+        ";
+    } elseif ($password !== $confirm_password) {
+        echo "
+        <script>
+            alert('Password tidak sama!');
+        </script>
+        ";
+    } else {
+        $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+        $insert_query = "INSERT INTO user (username, email, user_password, account_role) VALUES ('$username', '$email', '$hashed_password', 'user')";
+        
+        if (mysqli_query($conn, $insert_query)) {
+            echo "
+            <script>
+                alert('Daftar berhasil!');
+                document.location.href = 'login-page.php';
+            </script>
+            ";
+        } else {
+            echo "
+            <script>
+                alert('Daftar gagal! Silahkan coba lagi.');
+            </script>
+            ";
+        }
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +58,7 @@
     </div>
     <div class="card">
         <form action="" method="post">
-            <h1>Register</h1>
+            <h1>Sign up</h1>
             <div class="input-box">
                 <input type="text" name="username" id="username" placeholder="Username" required>
                 <i class="fa-solid fa-user"></i>
@@ -30,9 +75,9 @@
                 <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm Password" required>
                 <i class="fa-solid fa-lock"></i>
             </div>
-            <button type="submit" class="button-submit" name="submit">Register</button>
+            <button type="submit" class="button-submit" name="submit">Daftar</button>
             <div class="refer"><br>
-                <p>Already have an account? <a href="./login-page.html">Login</a></p>
+                <p>Sudah punya akun? <a href="./login-page.php">Masuk</a></p>
             </div>
         </form>
     </div>

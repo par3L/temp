@@ -1,0 +1,146 @@
+<?php
+require './nodes/session-track.php'
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sukri's Sticker | Beranda</title>
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    rel="stylesheet" />
+  <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="./styles/landing-page.css" />
+</head>
+
+<body>
+  
+  <?php require './nodes/navbar.php'; ?>
+
+  <div class="container fade">
+    <div class="content">
+      <div class="text-content">
+        <!-- <span>Sukri's Stickers</span> -->
+        <h1>Stickers Unik untuk Gaya Gen-Z</h1>
+
+        <p>
+          Kami tahu Gen-Z punya gaya unik dan selera yang berani. Itulah
+          sebabnya Sukri's Sticker menawarkan berbagai pilihan stiker yang
+          kekinian, dari yang lucu hingga edgy
+        </p>
+
+        <button class="cta-button">Cari Stiker!</button>
+      </div>
+
+      <div class="image-container">
+        <img src="./stickers/1-removebg.png" />
+      </div>
+    </div>
+    <div class="trusted-by">
+      <span>Trusted by |</span>
+      <div class="trusted-by-icons-wrapper">
+        <div class="trusted-by-icons">
+          <i class="fab fa-whatsapp"> </i>
+          <i class="fab fa-line"> </i>
+          <i class="fab fa-twitter"> </i>
+          <i class="fab fa-facebook"> </i>
+          <i class="fab fa-instagram"> </i>
+          <i class="fab fa-kickstarter-k"> </i>
+        </div>
+      </div>
+    </div>
+    <div class="most-popular">
+      <h2>Terpopuler</h2>
+      <div class="cards">
+        <div class="card">
+          <img src="./stickers/stiker-removebg.png" />
+          <h3>Emot Batu</h3>
+          <div class="description">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem
+              delectus voluptates tempora! Error accusamus, nobis, quas non
+              ratione dolor quia corporis temporibus ipsa itaque praesentium
+              tenetur reprehenderit iure molestias officia?
+            </p>
+          </div>
+          <!-- <div class="harga">Rp 10.000</div> -->
+        </div>
+        <div class="card">
+          <img src="./stickers/stiker2.jpg" />
+          <h3>Gojo Pak Vinsen</h3>
+          <div class="description">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem
+              delectus voluptates tempora! Error accusamus, nobis, quas non
+              ratione dolor quia corporis temporibus ipsa itaque praesentium
+              tenetur reprehenderit iure molestias officia?
+            </p>
+          </div>
+          <!-- <div class="harga">Rp 7.000</div> -->
+        </div>
+        <div class="card">
+          <img src="./stickers/stiker3.jpg" />
+          <h3>Coach Justin</h3>
+          <div class="description">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem
+              delectus voluptates tempora! Error accusamus, nobis, quas non
+              ratione dolor quia corporis temporibus ipsa itaque praesentium
+              tenetur reprehenderit iure molestias officia?
+            </p>
+          </div>
+          <!-- <div class="harga">Rp 5.000</div> -->
+        </div>
+        <div class="see-more-card">
+          <h3>See More Stickers</h3>
+          <p>Explore more designs and unique stickers!</p>
+          <button
+            onclick="window.location.href='./katalog-page.php'"
+            class="cta-button">
+            See More
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer appear">
+    <div id="about" class="about-us-container appear">
+      <div class="about-us-header">
+        <h1>About Us</h1>
+        <p>
+          Hey, selamat datang di Sukri's Sticker! Kami di sini buat kamu yang
+          mau tampil beda dengan stiker kece dan berkualitas. Ekspresikan
+          dirimu dan temukan stiker yang bikin harimu lebih seru
+        </p>
+      </div>
+
+      <div class="profiles">
+        <div class="profile">
+          <img src="./profile/jee.jpg" height="100" width="100" />
+          <div class="name">Jahron</div>
+          <div class="nim">037</div>
+        </div>
+        <div class="profile">
+          <img src="./profile/farrel.jpg" height="100" width="100" />
+          <div class="name">Farrel</div>
+          <div class="nim">032</div>
+        </div>
+        <div class="profile">
+          <img src="./profile/sukri.jpg" height="100" width="100" />
+          <div class="name">Sukri</div>
+          <div class="nim">031</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="copyright">
+    <p>&copy; 2023 Sukri's Stickers</p>
+  </div>
+
+  <script src="./scripts/script.js"></script>
+</body>
+
+</html>
