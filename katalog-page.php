@@ -19,6 +19,7 @@ $result = mysqli_query($conn, $query);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Katalog Stiker | Sukri's Stickers</title>
+    <link rel="icon" href="./assets/logo.png" type="image/x-icon">
     <link
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         rel="stylesheet" />
@@ -40,6 +41,9 @@ $result = mysqli_query($conn, $query);
                 <h2><?= htmlspecialchars($sticker['name']) ?></h2>
                 <p><?= htmlspecialchars($sticker['description']) ?></p>
                 <p>Rp. <?= htmlspecialchars($sticker['harga']) ?></p>
+                <div class="card-icons">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
             </div>
         <?php endwhile; ?>
         </div>
