@@ -24,6 +24,7 @@ $cart_result = mysqli_query($conn, $cart_query);
     <meta charset="UTF-8">
     <title>Your Cart | Sukri's Stickers</title>
     <link rel="stylesheet" href="./styles/katalog-page.css">
+    <link rel="icon" href="./assets/logo.png" type="image/x-icon">
     <link
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     rel="stylesheet" />
@@ -56,9 +57,9 @@ $cart_result = mysqli_query($conn, $cart_query);
     </div>
     <div class="footer">
         <div class="about-us-container">
-            
+
             <div class="about-us-header">
-                <p>Explore the unique stickers to add style and fun to your life!</p>
+                <p>Explore the unique stickers to add style and fun to your life! ~ Sukri</p>
                 <div class="copyright">
                     <p>&copy; 2023 Sukri's Stickers</p>
                 </div>

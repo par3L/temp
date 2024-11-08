@@ -48,8 +48,9 @@ if (isset($_POST['submit'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
+    <title>Sign up</title>
     <link rel="stylesheet" href="./styles/login-register.css">
+    <link rel="icon" href="./assets/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -68,16 +69,18 @@ if (isset($_POST['submit'])) {
                 <i class="fa-solid fa-envelope"></i>
             </div>
             <div class="input-box">
-                <input type="password" name="password" id="password" placeholder="Password" required>
+                        <input type="password" name="password" id="password" placeholder="Password" minlength="8" required>
                 <i class="fa-solid fa-lock"></i>
             </div>
             <div class="input-box">
-                <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm Password" required>
+                <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm Password"  minlength="8" required>
                 <i class="fa-solid fa-lock"></i>
             </div>
             <button type="submit" class="button-submit" name="submit">Daftar</button>
             <div class="refer"><br>
                 <p>Sudah punya akun? <a href="./login-page.php">Masuk</a></p>
+                <br><br>
+                <a href="./index.php">Kembali?</a>
             </div>
         </form>
     </div>

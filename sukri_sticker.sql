@@ -17,21 +17,21 @@
   /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
   /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
-  --
+  --5
   -- Table structure for table `stickers`
   --
 
   DROP TABLE IF EXISTS `stickers`;
   /*!40101 SET @saved_cs_client     = @@character_set_client */;
   /*!50503 SET character_set_client = utf8mb4 */;
-  CREATE TABLE `stickers` (
-    `id` int NOT NULL AUTO_INCREMENT,
-    `sticker_name` varchar(100) NOT NULL,
-    `description` text NOT NULL,
-    `image_filename` varchar(255) NOT NULL,
-    `price` decimal(10,2) NOT NULL,
-    PRIMARY KEY (`id`)
-  ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+    CREATE TABLE `stickers` (
+      `id` int NOT NULL AUTO_INCREMENT,
+      `sticker_name` varchar(100) NOT NULL,
+      `description` text NOT NULL,
+      `image_filename` varchar(255) NOT NULL,
+      `price` decimal(10,2) NOT NULL,
+      PRIMARY KEY (`id`)
+    ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
   /*!40101 SET character_set_client = @saved_cs_client */;
 
   --

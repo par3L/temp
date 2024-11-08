@@ -18,7 +18,6 @@
                 <?php if ($role === 'Admin'): ?>
                   <a href="./dashboard.php">Dashboard</a>
                 <?php else: ?>
-                  <a href="edit-profile.php">Edit Profile</a>
                   <a href="cart.php">Keranjang</a>
                 <?php endif; ?>
                 <a href="./nodes/destroy_session.php">Logout</a>

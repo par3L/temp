@@ -9,11 +9,9 @@ document.addEventListener('DOMContentLoaded', function () {
     sidebarLinks.forEach(link => {
         link.addEventListener('click', function (event) {
             event.preventDefault();  
-            hideAllSections();       
-
+            hideAllSections();      
             const action = link.getAttribute('data-action');
-            const targetSection = document.getElementById(`${action}StickerSection`);
-            
+            const targetSection = document.getElementById(`${action}Section`);  
             if (targetSection) {
                 targetSection.style.display = 'block';  
             }

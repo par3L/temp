@@ -228,7 +228,7 @@ body {
     color: #fff;
 }
 .most-popular {
-    margin-top: -20px; /* Adjusted margin to overlap with Trusted By */
+    margin-top: -20px; 
     font-size: 20px;
     color: #000;
     background-color: #fff;

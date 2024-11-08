@@ -31,7 +31,7 @@ require './nodes/session-track.php'
           kekinian, dari yang lucu hingga edgy
         </p>
 
-        <button class="cta-button">Cari Stiker!</button>
+        <button class="cta-button" onclick="window.location.href='katalog-page.php'">Cari Stiker!</button>
       </div>
 
       <div class="image-container">
@@ -59,10 +59,7 @@ require './nodes/session-track.php'
           <h3>Emot Batu</h3>
           <div class="description">
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem
-              delectus voluptates tempora! Error accusamus, nobis, quas non
-              ratione dolor quia corporis temporibus ipsa itaque praesentium
-              tenetur reprehenderit iure molestias officia?
+            Ekspresi dingin tak bergeming! Stiker Emot Batu ini cocok untuk menunjukkan perasaan yang tidak terpengaruh dalam segala situasi. Pas buat kalian yang suka memberi respons 'cool' tanpa banyak bicara!
             </p>
           </div>
           <!-- <div class="harga">Rp 10.000</div> -->
@@ -72,10 +69,7 @@ require './nodes/session-track.php'
           <h3>Gojo Pak Vinsen</h3>
           <div class="description">
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem
-              delectus voluptates tempora! Error accusamus, nobis, quas non
-              ratione dolor quia corporis temporibus ipsa itaque praesentium
-              tenetur reprehenderit iure molestias officia?
+             Kombinasi unik antara karakter Gojo Satoru dan sosok Pak Vinsen ini menambah sentuhan misteri dengan aura kekuatan yang keren. Cocok buat para penggemar anime yang ingin tampil beda di dunia chat!
             </p>
           </div>
           <!-- <div class="harga">Rp 7.000</div> -->
@@ -85,17 +79,13 @@ require './nodes/session-track.php'
           <h3>Coach Justin</h3>
           <div class="description">
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem
-              delectus voluptates tempora! Error accusamus, nobis, quas non
-              ratione dolor quia corporis temporibus ipsa itaque praesentium
-              tenetur reprehenderit iure molestias officia?
+            Motivasi unik dari Coach Justin dengan gaya santai dan cuek. Stiker ini tepat untuk mengungkapkan respon sarkas atau hanya sekedar 'no kroco allowed!' ketika mengobrol dengan teman!
             </p>
           </div>
           <!-- <div class="harga">Rp 5.000</div> -->
         </div>
         <div class="see-more-card">
           <h3>Lihat lebih banyak</h3>
-          <p>Explore more designs and unique stickers!</p>
           <button
             onclick="window.location.href='./katalog-page.php'"
             class="cta-button">
@@ -124,6 +114,7 @@ require './nodes/session-track.php'
             </div>
             <div class="profile-back">
               <div class="name">Jahron</div>
+              <div class="desc">"Admin IG Kelas"</div>
               <div class="nim">037</div>
             </div>
           </div>
@@ -135,6 +126,7 @@ require './nodes/session-track.php'
             </div>
             <div class="profile-back">
               <div class="name">Farrel</div>
+              <div class="desc">"Aslab Aselole"</div>
               <div class="nim">032</div>
             </div>
           </div>
@@ -146,6 +138,7 @@ require './nodes/session-track.php'
             </div>
             <div class="profile-back">
               <div class="name">Sukri</div>
+              <div class="desc">"Perkap Abadi"</div>
               <div class="nim">031</div>
             </div>
           </div>
