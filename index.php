@@ -16,7 +16,7 @@ require './nodes/session-track.php'
 </head>
 
 <body>
-  
+
   <?php require './nodes/navbar.php'; ?>
 
   <div class="container fade">
@@ -94,7 +94,7 @@ require './nodes/session-track.php'
           <!-- <div class="harga">Rp 5.000</div> -->
         </div>
         <div class="see-more-card">
-          <h3>See More Stickers</h3>
+          <h3>Lihat lebih banyak</h3>
           <p>Explore more designs and unique stickers!</p>
           <button
             onclick="window.location.href='./katalog-page.php'"
@@ -118,19 +118,37 @@ require './nodes/session-track.php'
 
       <div class="profiles">
         <div class="profile">
-          <img src="./profile/jee.jpg" height="100" width="100" />
-          <div class="name">Jahron</div>
-          <div class="nim">037</div>
+          <div class="profile-inner">
+            <div class="profile-front">
+              <img src="./profile/jee.jpg" alt="Foto Jahron" />
+            </div>
+            <div class="profile-back">
+              <div class="name">Jahron</div>
+              <div class="nim">037</div>
+            </div>
+          </div>
         </div>
         <div class="profile">
-          <img src="./profile/farrel.jpg" height="100" width="100" />
-          <div class="name">Farrel</div>
-          <div class="nim">032</div>
+          <div class="profile-inner">
+            <div class="profile-front">
+              <img src="./profile/farrel.jpg" alt="Foto Farrel" />
+            </div>
+            <div class="profile-back">
+              <div class="name">Farrel</div>
+              <div class="nim">032</div>
+            </div>
+          </div>
         </div>
         <div class="profile">
-          <img src="./profile/sukri.jpg" height="100" width="100" />
-          <div class="name">Sukri</div>
-          <div class="nim">031</div>
+          <div class="profile-inner">
+            <div class="profile-front">
+              <img src="./profile/sukri.jpg" alt="Foto Sukri" />
+            </div>
+            <div class="profile-back">
+              <div class="name">Sukri</div>
+              <div class="nim">031</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

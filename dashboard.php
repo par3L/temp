@@ -10,7 +10,7 @@ require './nodes/session-track.php';
 // error_reporting(E_ALL); // done, masalah di js, ke reload sebelum di POST
 // ini_set('display_errors', 1);
 
-// tamnbah
+// tambah
 if (isset($_POST['add_sticker'])) {
     $name = mysqli_real_escape_string($conn, $_POST['name']);
     $description = mysqli_real_escape_string($conn, $_POST['description']);
@@ -24,7 +24,7 @@ if (isset($_POST['add_sticker'])) {
     $allowed_extensions = ['jpg', 'jpeg', 'png', 'webp', 'svg'];
     $file_extension = strtolower(pathinfo($file_name, PATHINFO_EXTENSION));
 
-    if ($file_size > 2097152) {
+    if ($file_size > 999999999) {
         echo "<script>alert('Error: Ukuran file terlalu besar.');</script>";
     } elseif (!in_array($file_extension, $allowed_extensions)) {
         echo "<script>alert('Error: Ekstensi file tidak valid! Ekstensi valid: JPG, PNG, JPEG, WEBP, or SVG files.');</script>";
@@ -80,7 +80,7 @@ if (isset($_POST['delete_sticker'])) {
     <title>Admin Dashboard | Sukri's Stickers</title>
     <link rel="icon" href="./assets/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./styles/dashboard.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
 </head>
 
 <body>
@@ -100,14 +100,15 @@ if (isset($_POST['delete_sticker'])) {
             <p>Silahkan pilih opsi dari sidebar.</p>
 
             <!-- tambah -->
-            <form id="addStickerForm" method="POST" enctype="multipart/form-data">
-                <input type="text" name="name" placeholder="Sticker Name" required><br>
-                <textarea name="description" placeholder="Description" required></textarea><br>
-                <input type="number" step="0.01" name="price" placeholder="Price" required><br>
-                <input type="file" name="image" required><br>
-                <button type="submit" name="add_sticker">Add Sticker</button>
-            </form>
-
+            <div class="addForm">
+                <form id="addStickerForm" method="POST" enctype="multipart/form-data">
+                    <input type="text" name="name" placeholder="Nama Sticker" required><br>
+                    <textarea name="description" placeholder="Deskripsi" required></textarea><br>
+                    <input type="number" step="0.01" name="price" placeholder="Harga" required><br>
+                    <input type="file" name="image" required><br>
+                    <button type="submit" name="add_sticker">Add Sticker</button>
+                </form>
+            </div>
 
             <!-- update -->
             <div id="updateStickerSection" class="action-section">
@@ -120,7 +121,7 @@ if (isset($_POST['delete_sticker'])) {
                         <div class="sticker-info">
                             <h3><?= htmlspecialchars($sticker['sticker_name']) ?></h3>
                             <p><?= htmlspecialchars($sticker['description']) ?></p>
-                            <p>$<?= htmlspecialchars($sticker['price']) ?></p>
+                            <p>Rp. <?= htmlspecialchars($sticker['price']) ?></p>
                         </div>
                         <form method="POST">
                             <input type="hidden" name="id" value="<?= $sticker['id'] ?>">
@@ -144,7 +145,7 @@ if (isset($_POST['delete_sticker'])) {
                         <div class="sticker-info">
                             <h3><?= htmlspecialchars($sticker['sticker_name']) ?></h3>
                             <p><?= htmlspecialchars($sticker['description']) ?></p>
-                            <p>$<?= htmlspecialchars($sticker['price']) ?></p>
+                            <p>Rp. <?= htmlspecialchars($sticker['price']) ?></p>
                         </div>
                         <form method="POST">
                             <input type="hidden" name="id" value="<?= $sticker['id'] ?>">

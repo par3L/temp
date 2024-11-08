@@ -70,7 +70,7 @@
                 <label for="remember-cred">
                     <input type="checkbox" id="remember-cred"> Biarkan saya tetap masuk.
                 </label>
-                <a href="#">Lupa Password?</a>
+                <a href="./index.php">Kembali?</a>
             </div>
             <button type="submit" class="button-submit" name="submit">Masuk</button>
             <div class="refer">

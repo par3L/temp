@@ -211,6 +211,11 @@ body {
     justify-content: flex-start;
 }
 
+.addForm { 
+    width: 40%;
+    display: contents;
+}
+
 form input[type="text"],
 form input[type="number"],
 form textarea,
